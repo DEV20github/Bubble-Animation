@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/background.png');
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 85%;
+    height: 15%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+    /* padding: 0px 0px 0px 0px; */
+}
+
+button {
+    color: #fdfcfb;
+    background: transparent;
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.content {
+    color: #ecdada;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    /* border: 2px solid yellow; */
+    transform: translateY(-50%);
+    z-index: 2;
+    /* padding: 0px 0px 0px 0px; */
+    /* margin: 0px 0px 0px 0px; */
+}
+
+h1 {
+    margin: 10px 0px 30px 0px;
+    font-size: 90px;
+    line-height: 75px;
+}
+
+.side-bar {
+    width: 52px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.menu {
+    display: block;
+    width: 30px;
+    margin: 25px auto 0px;
+    cursor: pointer;
+    /* border: 2px solid yellow; */
+}
+
+.social-links img,
+.usefull-links img {
+    width: 44px;
+    margin: 12px 0px 2px 5px;
+    cursor: pointer;
+    /* border: 2px solid yellow; */
+}
+
+.social-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.usefull-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.bbl img {
+    width: 35px;
+    animation: bbl 7s linear infinite;
+}
+
+.bbl {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+}
+
+@keyframes bbl {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-90vh);
+        opacity: 0;
+    }
+}
+
+.bbl img:nth-child(1) {
+    animation-delay: 2s;
+    width: 70px;
+}
+
+.bbl img:nth-child(2) {
+    animation-delay: 1s;
+    width: 40px;
+}
+
+.bbl img:nth-child(3) {
+    animation-delay: 3s;
+    width: 30px;
+}
+
+.bbl img:nth-child(4) {
+    animation-delay: 4.5s;
+    width: 100px;
+}
+
+.bbl img:nth-child(5) {
+    animation-delay: 1.5s;
+    width: 45px;
+}
+
+.bbl img:nth-child(6) {
+    animation-delay: 7s;
+    width: 80px;
+}
+
+.bbl img:nth-child(7) {
+    animation-delay: 6s;
+    width: 40px;
+}
